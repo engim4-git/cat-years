@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Cat_Years" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWS-91-6qd">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lQ-l0-yxA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="Find Age">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findAge:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UFw-hj-zRP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your cat's age, in years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvg-rN-CsS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hig-st-58B">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="igU-SP-vyw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="igU-SP-vyw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="igU-SP-vyw"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="standard.png" translatesAutoresizingMaskIntoConstraints="NO" id="lld-mi-hzE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="83p-rz-ywa"/>
+                                    <constraint firstAttribute="height" constant="147" id="Bc5-oo-0pa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="83p-rz-ywa"/>
+                                        <exclude reference="Bc5-oo-0pa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="83p-rz-ywa"/>
+                                        <include reference="Bc5-oo-0pa"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3t-oW-VPL">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" red="0.89683948863636365" green="0.0" blue="0.098724621490602876" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="93" y="290" width="182" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.8436851769120004" blue="0.56854034035257861" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QWS-91-6qd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="131" id="3sB-8p-BkB"/>
+                            <constraint firstItem="mvg-rN-CsS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="57" id="807-JP-CQB"/>
+                            <constraint firstItem="O3t-oW-VPL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="270" id="KHR-bK-6fc"/>
+                            <constraint firstItem="lld-mi-hzE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="116" id="WG3-xe-vs9"/>
+                            <constraint firstItem="QWS-91-6qd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="26" id="ZR9-q4-yuV"/>
+                            <constraint firstItem="lld-mi-hzE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="359" id="dF0-eb-ECF"/>
+                            <constraint firstItem="mvg-rN-CsS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="85" id="efz-39-4Oi"/>
+                            <constraint firstItem="2lQ-l0-yxA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="201" id="mVc-WN-p33"/>
+                            <constraint firstItem="Hig-st-58B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="141" id="pYz-WA-Vru"/>
+                            <constraint firstItem="O3t-oW-VPL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="77" id="tGa-Uk-Z2z"/>
+                            <constraint firstItem="2lQ-l0-yxA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="138" id="uO6-11-UCD"/>
+                            <constraint firstItem="Hig-st-58B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="122" id="xdV-3C-H8a"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="QWS-91-6qd"/>
+                                <exclude reference="2lQ-l0-yxA"/>
+                                <exclude reference="mvg-rN-CsS"/>
+                                <exclude reference="Hig-st-58B"/>
+                                <exclude reference="lld-mi-hzE"/>
+                                <exclude reference="O3t-oW-VPL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="807-JP-CQB"/>
+                                <exclude reference="efz-39-4Oi"/>
+                                <exclude reference="3sB-8p-BkB"/>
+                                <exclude reference="ZR9-q4-yuV"/>
+                                <exclude reference="pYz-WA-Vru"/>
+                                <exclude reference="xdV-3C-H8a"/>
+                                <exclude reference="mVc-WN-p33"/>
+                                <exclude reference="uO6-11-UCD"/>
+                                <exclude reference="KHR-bK-6fc"/>
+                                <exclude reference="tGa-Uk-Z2z"/>
+                                <exclude reference="WG3-xe-vs9"/>
+                                <exclude reference="dF0-eb-ECF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="QWS-91-6qd"/>
+                                <include reference="2lQ-l0-yxA"/>
+                                <include reference="mvg-rN-CsS"/>
+                                <include reference="Hig-st-58B"/>
+                                <include reference="lld-mi-hzE"/>
+                                <include reference="O3t-oW-VPL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="807-JP-CQB"/>
+                                <include reference="efz-39-4Oi"/>
+                                <include reference="3sB-8p-BkB"/>
+                                <include reference="ZR9-q4-yuV"/>
+                                <include reference="pYz-WA-Vru"/>
+                                <include reference="xdV-3C-H8a"/>
+                                <include reference="mVc-WN-p33"/>
+                                <include reference="uO6-11-UCD"/>
+                                <include reference="KHR-bK-6fc"/>
+                                <include reference="tGa-Uk-Z2z"/>
+                                <include reference="WG3-xe-vs9"/>
+                                <include reference="dF0-eb-ECF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="catImage" destination="lld-mi-hzE" id="jJf-Fz-qBf"/>
+                        <outlet property="resultLabel" destination="O3t-oW-VPL" id="ngI-W6-IUq"/>
+                        <outlet property="textFieldAge" destination="Hig-st-58B" id="dbh-1J-Sva"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="669.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="standard.png" width="264" height="300"/>
+    </resources>
+</document>
