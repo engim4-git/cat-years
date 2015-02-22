@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             } else {
                  catImage.image = UIImage(named: "young")
             }
-            
+            self.view.endEditing(true);
             resultLabel.text = "Your Cat is \(catYears) in cat years"
         } else {
             resultLabel.text = "Please type in an age"
